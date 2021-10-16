@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#container {
+  margin: auto auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 100vh;
+  width: 60%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 3rem;
+  height: 500px;
+}
+.c1 {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+.c2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.c3 {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+p {
+  font-weight: bold;
+  max-height: 3rem;
+  max-width: 20rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  word-break: normal;
+}
+h1 {
+  margin: 2rem 0 2rem 0;
+  color: white;
+}
+button {
+  color: white;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 2px solid white;
+  width: 150px;
+  height: 50px;
+  margin-top: auto;
+}
+button:hover {
+  transform: scale(1.1);
+  transition: 0.1s ease-in-out;
+}
+.attribution {
+  margin-top: 50px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 700px) {
+  #container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 80%;
+  }
+  .content {
+    height: 400px;
+    padding: 2rem;
+  }
+  .c1 {
+    border-radius: 10px 10px 0 0;
+  }
+  .c3 {
+    border-radius: 0 0 10px 10px;
+  }
+  h1,
+  p {
+    margin: 1rem 0 1rem 0;
+  }
+}
